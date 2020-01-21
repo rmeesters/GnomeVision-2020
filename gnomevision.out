@@ -1,0 +1,8 @@
+Initialized table
+read string: v4l2src device=/dev/video0 ! video/x-raw,format=(string)BGR,width=(int)640,height=(int)480,framerate=(fraction)30/1 ! tee name=split split. ! queue ! videoconvert ! omxh264enc bitrate=300000 ! video/x-h264, stream-format=(string)byte-stream ! h264parse ! rtph264pay ! udpsink host=10.20.13.230 port=5806 split. ! queue ! autovideoconvert ! appsink
+GStreamer read pipeline: v4l2src device=/dev/video0 ! video/x-raw,format=(string)BGR,width=(int)640,height=(int)480,framerate=(fraction)30/1 ! tee name=split split. ! queue ! videoconvert ! omxh264enc bitrate=300000 ! video/x-h264, stream-format=(string)byte-stream ! h264parse ! rtph264pay ! udpsink host=10.20.13.230 port=5806 split. ! queue ! autovideoconvert ! appsink
+GStreamer succesfully opened bin
+using manual pipeline
+set manual pipeline
+set caps
+pipeline status: 0

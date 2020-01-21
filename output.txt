@@ -1,0 +1,3880 @@
+Initialized table
+read string: v4l2src device=/dev/video0 ! video/x-raw,format=(string)BGR,width=(int)640,height=(int)480,framerate=(fraction)30/1 ! tee name=split split. ! queue ! videoconvert ! omxh264enc bitrate=300000 ! video/x-h264, stream-format=(string)byte-stream ! h264parse ! rtph264pay ! udpsink host=DESKTOP-G7MQOUM.local port=5806 split. ! queue ! autovideoconvert ! appsink
+GStreamer read pipeline: v4l2src device=/dev/video0 ! video/x-raw,format=(string)BGR,width=(int)640,height=(int)480,framerate=(fraction)30/1 ! tee name=split split. ! queue ! videoconvert ! omxh264enc bitrate=300000 ! video/x-h264, stream-format=(string)byte-stream ! h264parse ! rtph264pay ! udpsink host=DESKTOP-G7MQOUM.local port=5806 split. ! queue ! autovideoconvert ! appsink
+GStreamer succesfully opened bin
+using manual pipeline
+set manual pipeline
+set caps
+pipeline status: 2
+pipeline status update recieved: 1
+PAD: testing
+BUFFER CAPS: video/x-raw, format=(string)BGR, width=(int)640, height=(int)480, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)30/1
+STRUCTURE: video/x-raw, format=(string)BGR, width=(int)640, height=(int)480, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)30/1;
+Succesfully opened camera with dimensions: 640x480
+write string: appsrc ! video/x-raw, format=(string)BGR, width=(int)640, height=(int)480, framerate=(fraction)30/1 ! videoconvert ! omxh264enc bitrate=300000 ! video/x-h264, stream-format=(string)byte-stream ! h264parse ! rtph264pay ! udpsink host=DESKTOP-G7MQOUM.local port=5805
+GStreamer write pipeline: appsrc ! video/x-raw, format=(string)BGR, width=(int)640, height=(int)480, framerate=(fraction)30/1 ! videoconvert ! omxh264enc bitrate=300000 ! video/x-h264, stream-format=(string)byte-stream ! h264parse ! rtph264pay ! udpsink host=DESKTOP-G7MQOUM.local port=5805
+found manual pipeline
+Writer caps: video/x-raw, format=(string)BGR, width=(int)640, height=(int)480, framerate=(fraction)30/1
+Data header:
+Timestamp,Valid,Area,Angle,Midpoint_x,Midpoint_y,UL_x,UL_y,UR_x,UR_y,LL_x,LL_y,LR_x,LR_y,UpperWidth,LowerWidth,LeftHeight,RightHeightframe #0
+Num contours: 1
+Angle 14.420769
+results string: 1549142562303,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #1
+Num contours: 1
+Angle 14.470291
+results string: 1549142562349,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #2
+Num contours: 1
+Angle 14.420769
+results string: 1549142562373,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #3
+Num contours: 1
+Angle 14.036240
+results string: 1549142562409,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #4
+Num contours: 1
+Angle 14.036240
+results string: 1549142562444,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #5
+Num contours: 1
+Angle 14.420769
+results string: 1549142562472,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #6
+Num contours: 1
+Angle 14.470291
+results string: 1549142562508,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #7
+Num contours: 1
+Angle 14.420769
+results string: 1549142562540,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #8
+Num contours: 1
+Angle 14.470291
+results string: 1549142562572,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #9
+Num contours: 1
+Angle 14.420769
+results string: 1549142562608,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #10
+Num contours: 1
+Angle 14.036240
+results string: 1549142562640,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #11
+Num contours: 1
+Angle 14.036240
+results string: 1549142562673,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #12
+Num contours: 1
+Angle 14.470291
+results string: 1549142562708,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #13
+Num contours: 1
+Angle 14.036240
+results string: 1549142562743,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #14
+Num contours: 1
+Angle 14.420769
+results string: 1549142562772,1,1330.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #15
+Num contours: 1
+Angle 14.470291
+results string: 1549142562809,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #16
+Num contours: 1
+Angle 14.036240
+results string: 1549142562840,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #17
+Num contours: 1
+Angle 14.036240
+results string: 1549142562873,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #18
+Num contours: 1
+Angle 14.470291
+results string: 1549142562909,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #19
+Num contours: 1
+Angle 14.470291
+results string: 1549142562940,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #20
+Num contours: 1
+Angle 14.470291
+results string: 1549142562972,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #21
+Num contours: 1
+Angle 14.420769
+results string: 1549142563009,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #22
+Num contours: 1
+Angle 14.470291
+results string: 1549142563040,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #23
+Num contours: 1
+Angle 14.420769
+results string: 1549142563073,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #24
+Num contours: 1
+Angle 14.420769
+results string: 1549142563108,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #25
+Num contours: 1
+Angle 14.036240
+results string: 1549142563141,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #26
+Num contours: 1
+Angle 14.470291
+results string: 1549142563173,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #27
+Num contours: 1
+Angle 14.470291
+results string: 1549142563209,1,1331.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #28
+Num contours: 1
+Angle 14.420769
+results string: 1549142563240,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #29
+Num contours: 1
+Angle 14.036240
+results string: 1549142563273,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #30
+Num contours: 1
+Angle 14.470291
+results string: 1549142563309,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #31
+Num contours: 1
+Angle 14.420769
+results string: 1549142563340,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #32
+Num contours: 1
+Angle 14.420769
+results string: 1549142563373,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #33
+Num contours: 1
+Angle 14.420769
+results string: 1549142563409,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #34
+Num contours: 1
+Angle 14.420769
+results string: 1549142563441,1,1330.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #35
+Num contours: 1
+Angle 14.420769
+results string: 1549142563473,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #36
+Num contours: 1
+Angle 14.036240
+results string: 1549142563509,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #37
+Num contours: 1
+Angle 14.470291
+results string: 1549142563541,1,1331.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #38
+Num contours: 1
+Angle 14.470291
+results string: 1549142563573,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #39
+Num contours: 1
+Angle 14.470291
+results string: 1549142563609,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #40
+Num contours: 1
+Angle 14.036240
+results string: 1549142563641,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #41
+Num contours: 1
+Angle 14.036240
+results string: 1549142563673,1,1332.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #42
+Num contours: 1
+Angle 14.470291
+results string: 1549142563709,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #43
+Num contours: 1
+Angle 14.420769
+results string: 1549142563741,1,1331,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #44
+Num contours: 1
+Angle 14.420769
+results string: 1549142563773,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #45
+Num contours: 1
+Angle 14.470291
+results string: 1549142563809,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #46
+Num contours: 1
+Angle 14.470291
+results string: 1549142563841,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #47
+Num contours: 1
+Angle 14.470291
+results string: 1549142563873,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #48
+Num contours: 1
+Angle 14.036240
+results string: 1549142563909,1,1334,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #49
+Num contours: 1
+Angle 14.420769
+results string: 1549142563941,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #50
+Num contours: 1
+Angle 14.470291
+results string: 1549142563973,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #51
+Num contours: 1
+Angle 14.036240
+results string: 1549142564009,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #52
+Num contours: 1
+Angle 14.470291
+results string: 1549142564041,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #53
+Num contours: 1
+Angle 14.420769
+results string: 1549142564073,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #54
+Num contours: 1
+Angle 14.470291
+results string: 1549142564109,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #55
+Num contours: 1
+Angle 14.420769
+results string: 1549142564141,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #56
+Num contours: 1
+Angle 14.036240
+results string: 1549142564173,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #57
+Num contours: 1
+Angle 14.036240
+results string: 1549142564209,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #58
+Num contours: 1
+Angle 14.420769
+results string: 1549142564241,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #59
+Num contours: 1
+Angle 14.420769
+results string: 1549142564273,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #60
+Num contours: 1
+Angle 14.036240
+results string: 1549142564309,1,1332.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #61
+Num contours: 1
+Angle 14.420769
+results string: 1549142564341,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #62
+Num contours: 1
+Angle 14.470291
+results string: 1549142564373,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #63
+Num contours: 1
+Angle 14.420769
+results string: 1549142564409,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #64
+Num contours: 1
+Angle 14.036240
+results string: 1549142564441,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #65
+Num contours: 1
+Angle 14.036240
+results string: 1549142564473,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #66
+Num contours: 1
+Angle 14.420769
+results string: 1549142564509,1,1331,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #67
+Num contours: 1
+Angle 14.420769
+results string: 1549142564541,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #68
+Num contours: 1
+Angle 14.420769
+results string: 1549142564573,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #69
+Num contours: 1
+Angle 14.420769
+results string: 1549142564609,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #70
+Num contours: 1
+Angle 14.470291
+results string: 1549142564641,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #71
+Num contours: 1
+Angle 14.420769
+results string: 1549142564673,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #72
+Num contours: 1
+Angle 14.420769
+results string: 1549142564709,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #73
+Num contours: 1
+Angle 14.470291
+results string: 1549142564741,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #74
+Num contours: 1
+Angle 14.470291
+results string: 1549142564773,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #75
+Num contours: 1
+Angle 14.381393
+results string: 1549142564809,1,1332,14.3814,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #76
+Num contours: 1
+Angle 14.420769
+results string: 1549142564841,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #77
+Num contours: 1
+Angle 14.420769
+results string: 1549142564873,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #78
+Num contours: 1
+Angle 14.470291
+results string: 1549142564909,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #79
+Num contours: 1
+Angle 14.470291
+results string: 1549142564941,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #80
+Num contours: 1
+Angle 14.036240
+results string: 1549142564973,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #81
+Num contours: 1
+Angle 14.036240
+results string: 1549142565009,1,1334.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #82
+Num contours: 1
+Angle 14.036240
+results string: 1549142565041,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #83
+Num contours: 1
+Angle 14.420769
+results string: 1549142565073,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #84
+Num contours: 1
+Angle 14.036240
+results string: 1549142565109,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #85
+Num contours: 1
+Angle 14.420769
+results string: 1549142565141,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #86
+Num contours: 1
+Angle 14.420769
+results string: 1549142565173,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #87
+Num contours: 1
+Angle 14.470291
+results string: 1549142565209,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #88
+Num contours: 1
+Angle 14.470291
+results string: 1549142565241,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #89
+Num contours: 1
+Angle 14.470291
+results string: 1549142565273,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #90
+Num contours: 1
+Angle 14.420769
+results string: 1549142565309,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #91
+Num contours: 1
+Angle 14.036240
+results string: 1549142565341,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #92
+Num contours: 1
+Angle 14.470291
+results string: 1549142565373,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #93
+Num contours: 1
+Angle 14.470291
+results string: 1549142565409,1,1331.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #94
+Num contours: 1
+Angle 14.420769
+results string: 1549142565441,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #95
+Num contours: 1
+Angle 14.036240
+results string: 1549142565473,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #96
+Num contours: 1
+Angle 14.420769
+results string: 1549142565509,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #97
+Num contours: 1
+Angle 14.036240
+results string: 1549142565541,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #98
+Num contours: 1
+Angle 14.420769
+results string: 1549142565573,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #99
+Num contours: 1
+Angle 14.420769
+results string: 1549142565609,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #100
+Num contours: 1
+Angle 14.036240
+results string: 1549142565641,1,1335.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #101
+Num contours: 1
+Angle 14.420769
+results string: 1549142565673,1,1331,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #102
+Num contours: 1
+Angle 14.036240
+results string: 1549142565710,1,1332.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #103
+Num contours: 1
+Angle 14.036240
+results string: 1549142565753,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #104
+Num contours: 1
+Angle 14.036240
+results string: 1549142565777,1,1332.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #105
+Num contours: 1
+Angle 14.036240
+results string: 1549142565809,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #106
+Num contours: 1
+Angle 14.420769
+results string: 1549142565842,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #107
+Num contours: 1
+Angle 14.036240
+results string: 1549142565873,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #108
+Num contours: 1
+Angle 14.470291
+results string: 1549142565910,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #109
+Num contours: 1
+Angle 14.470291
+results string: 1549142565941,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #110
+Num contours: 1
+Angle 14.420769
+results string: 1549142565974,1,1331,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #111
+Num contours: 1
+Angle 14.420769
+results string: 1549142566009,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #112
+Num contours: 1
+Angle 14.420769
+results string: 1549142566041,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #113
+Num contours: 1
+Angle 14.036240
+results string: 1549142566073,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #114
+Num contours: 1
+Angle 14.381393
+results string: 1549142566110,1,1332,14.3814,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #115
+Num contours: 1
+Angle 14.420769
+results string: 1549142566141,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #116
+Num contours: 1
+Angle 14.420769
+results string: 1549142566173,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #117
+Num contours: 1
+Angle 14.470291
+results string: 1549142566210,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #118
+Num contours: 1
+Angle 14.470291
+results string: 1549142566242,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #119
+Num contours: 1
+Angle 14.420769
+results string: 1549142566273,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #120
+Num contours: 1
+Angle 14.470291
+results string: 1549142566310,1,1331,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #121
+Num contours: 1
+Angle 14.036240
+results string: 1549142566342,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #122
+Num contours: 1
+Angle 14.470291
+results string: 1549142566373,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #123
+Num contours: 1
+Angle 14.036240
+results string: 1549142566410,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #124
+Num contours: 1
+Angle 14.036240
+results string: 1549142566442,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #125
+Num contours: 1
+Angle 14.036240
+results string: 1549142566473,1,1332.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #126
+Num contours: 1
+Angle 14.420769
+results string: 1549142566510,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #127
+Num contours: 1
+Angle 14.036240
+results string: 1549142566542,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #128
+Num contours: 1
+Angle 14.470291
+results string: 1549142566574,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #129
+Num contours: 1
+Angle 14.036240
+results string: 1549142566610,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #130
+Num contours: 1
+Angle 14.470291
+results string: 1549142566641,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #131
+Num contours: 1
+Angle 14.420769
+results string: 1549142566674,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #132
+Num contours: 1
+Angle 14.420769
+results string: 1549142566710,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #133
+Num contours: 1
+Angle 14.420769
+results string: 1549142566742,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #134
+Num contours: 1
+Angle 14.420769
+results string: 1549142566774,1,1330.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #135
+Num contours: 1
+Angle 14.470291
+results string: 1549142566810,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #136
+Num contours: 1
+Angle 14.470291
+results string: 1549142566846,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #137
+Num contours: 1
+Angle 14.420769
+results string: 1549142566874,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #138
+Num contours: 1
+Angle 14.036240
+results string: 1549142566910,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #139
+Num contours: 1
+Angle 14.036240
+results string: 1549142566942,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #140
+Num contours: 1
+Angle 14.470291
+results string: 1549142566974,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #141
+Num contours: 1
+Angle 14.470291
+results string: 1549142567010,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #142
+Num contours: 1
+Angle 14.420769
+results string: 1549142567042,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #143
+Num contours: 1
+Angle 14.470291
+results string: 1549142567074,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #144
+Num contours: 1
+Angle 14.470291
+results string: 1549142567110,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #145
+Num contours: 1
+Angle 14.420769
+results string: 1549142567142,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #146
+Num contours: 1
+Angle 14.036240
+results string: 1549142567174,1,1332.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #147
+Num contours: 1
+Angle 14.420769
+results string: 1549142567210,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #148
+Num contours: 1
+Angle 14.470291
+results string: 1549142567242,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #149
+Num contours: 1
+Angle 14.420769
+results string: 1549142567274,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #150
+Num contours: 1
+Angle 14.036240
+results string: 1549142567310,1,1335.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #151
+Num contours: 1
+Angle 14.470291
+results string: 1549142567342,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #152
+Num contours: 1
+Angle 14.420769
+results string: 1549142567374,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #153
+Num contours: 1
+Angle 14.036240
+results string: 1549142567410,1,1332.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #154
+Num contours: 1
+Angle 14.420769
+results string: 1549142567442,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #155
+Num contours: 1
+Angle 14.420769
+results string: 1549142567474,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #156
+Num contours: 1
+Angle 14.036240
+results string: 1549142567510,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #157
+Num contours: 1
+Angle 14.036240
+results string: 1549142567542,1,1335,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #158
+Num contours: 1
+Angle 14.036240
+results string: 1549142567574,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #159
+Num contours: 1
+Angle 14.420769
+results string: 1549142567610,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #160
+Num contours: 1
+Angle 14.420769
+results string: 1549142567642,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #161
+Num contours: 1
+Angle 14.470291
+results string: 1549142567674,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #162
+Num contours: 1
+Angle 14.036240
+results string: 1549142567710,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #163
+Num contours: 1
+Angle 14.420769
+results string: 1549142567742,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #164
+Num contours: 1
+Angle 14.036240
+results string: 1549142567774,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #165
+Num contours: 1
+Angle 14.420769
+results string: 1549142567810,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #166
+Num contours: 1
+Angle 14.470291
+results string: 1549142567842,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #167
+Num contours: 1
+Angle 14.420769
+results string: 1549142567874,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #168
+Num contours: 1
+Angle 14.420769
+results string: 1549142567910,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #169
+Num contours: 1
+Angle 14.470291
+results string: 1549142567942,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #170
+Num contours: 1
+Angle 14.036240
+results string: 1549142567974,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #171
+Num contours: 1
+Angle 14.470291
+results string: 1549142568010,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #172
+Num contours: 1
+Angle 14.470291
+results string: 1549142568042,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #173
+Num contours: 1
+Angle 14.420769
+results string: 1549142568074,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #174
+Num contours: 1
+Angle 14.420769
+results string: 1549142568110,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #175
+Num contours: 1
+Angle 14.036240
+results string: 1549142568142,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #176
+Num contours: 1
+Angle 14.470291
+results string: 1549142568174,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #177
+Num contours: 1
+Angle 14.420769
+results string: 1549142568210,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #178
+Num contours: 1
+Angle 14.470291
+results string: 1549142568242,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #179
+Num contours: 1
+Angle 14.470291
+results string: 1549142568274,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #180
+Num contours: 1
+Angle 14.036240
+results string: 1549142568310,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #181
+Num contours: 1
+Angle 14.420769
+results string: 1549142568342,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #182
+Num contours: 1
+Angle 14.036240
+results string: 1549142568374,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #183
+Num contours: 1
+Angle 14.470291
+results string: 1549142568410,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #184
+Num contours: 1
+Angle 14.036240
+results string: 1549142568442,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #185
+Num contours: 1
+Angle 14.470291
+results string: 1549142568474,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #186
+Num contours: 1
+Angle 14.470291
+results string: 1549142568510,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #187
+Num contours: 1
+Angle 14.470291
+results string: 1549142568543,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #188
+Num contours: 1
+Angle 14.420769
+results string: 1549142568574,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #189
+Num contours: 1
+Angle 14.036240
+results string: 1549142568611,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #190
+Num contours: 1
+Angle 14.420769
+results string: 1549142568642,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #191
+Num contours: 1
+Angle 14.420769
+results string: 1549142568674,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #192
+Num contours: 1
+Angle 14.420769
+results string: 1549142568710,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #193
+Num contours: 1
+Angle 14.420769
+results string: 1549142568742,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #194
+Num contours: 1
+Angle 14.470291
+results string: 1549142568774,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #195
+Num contours: 1
+Angle 14.470291
+results string: 1549142568811,1,1331.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #196
+Num contours: 1
+Angle 14.470291
+results string: 1549142568842,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #197
+Num contours: 1
+Angle 14.470291
+results string: 1549142568874,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #198
+Num contours: 1
+Angle 14.420769
+results string: 1549142568911,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #199
+Num contours: 1
+Angle 14.420769
+results string: 1549142568943,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #200
+Num contours: 1
+Angle 14.470291
+results string: 1549142568974,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #201
+Num contours: 1
+Angle 14.420769
+results string: 1549142569010,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #202
+Num contours: 1
+Angle 14.420769
+results string: 1549142569042,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #203
+Num contours: 1
+Angle 14.470291
+results string: 1549142569074,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #204
+Num contours: 1
+Angle 14.036240
+results string: 1549142569111,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #205
+Num contours: 1
+Angle 14.470291
+results string: 1549142569142,1,1331,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #206
+Num contours: 1
+Angle 14.420769
+results string: 1549142569175,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #207
+Num contours: 1
+Angle 14.036240
+results string: 1549142569211,1,1335.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #208
+Num contours: 1
+Angle 14.470291
+results string: 1549142569243,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #209
+Num contours: 1
+Angle 14.470291
+results string: 1549142569274,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #210
+Num contours: 1
+Angle 14.036240
+results string: 1549142569310,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #211
+Num contours: 1
+Angle 14.470291
+results string: 1549142569343,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #212
+Num contours: 1
+Angle 14.420769
+results string: 1549142569374,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #213
+Num contours: 1
+Angle 14.036240
+results string: 1549142569411,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #214
+Num contours: 1
+Angle 14.420769
+results string: 1549142569442,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #215
+Num contours: 1
+Angle 14.036240
+results string: 1549142569475,1,1335.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #216
+Num contours: 1
+Angle 14.420769
+results string: 1549142569511,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #217
+Num contours: 1
+Angle 14.470291
+results string: 1549142569543,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #218
+Num contours: 1
+Angle 14.470291
+results string: 1549142569575,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #219
+Num contours: 1
+Angle 14.470291
+results string: 1549142569610,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #220
+Num contours: 1
+Angle 14.036240
+results string: 1549142569643,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #221
+Num contours: 1
+Angle 14.036240
+results string: 1549142569675,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #222
+Num contours: 1
+Angle 14.470291
+results string: 1549142569710,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #223
+Num contours: 1
+Angle 14.470291
+results string: 1549142569743,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #224
+Num contours: 1
+Angle 14.420769
+results string: 1549142569774,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #225
+Num contours: 1
+Angle 14.036240
+results string: 1549142569811,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #226
+Num contours: 1
+Angle 14.036240
+results string: 1549142569845,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #227
+Num contours: 1
+Angle 14.420769
+results string: 1549142569874,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #228
+Num contours: 1
+Angle 14.470291
+results string: 1549142569911,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #229
+Num contours: 1
+Angle 14.036240
+results string: 1549142569942,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #230
+Num contours: 1
+Angle 14.420769
+results string: 1549142569975,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #231
+Num contours: 1
+Angle 14.470291
+results string: 1549142570011,1,1331.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #232
+Num contours: 1
+Angle 14.470291
+results string: 1549142570043,1,1330.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #233
+Num contours: 1
+Angle 14.036240
+results string: 1549142570074,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #234
+Num contours: 1
+Angle 14.470291
+results string: 1549142570111,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #235
+Num contours: 1
+Angle 14.036240
+results string: 1549142570143,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #236
+Num contours: 1
+Angle 14.420769
+results string: 1549142570174,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #237
+Num contours: 1
+Angle 14.420769
+results string: 1549142570211,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #238
+Num contours: 1
+Angle 14.420769
+results string: 1549142570246,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #239
+Num contours: 1
+Angle 14.420769
+results string: 1549142570275,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #240
+Num contours: 1
+Angle 14.420769
+results string: 1549142570311,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #241
+Num contours: 1
+Angle 14.470291
+results string: 1549142570343,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #242
+Num contours: 1
+Angle 14.420769
+results string: 1549142570374,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #243
+Num contours: 1
+Angle 14.470291
+results string: 1549142570411,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #244
+Num contours: 1
+Angle 14.420769
+results string: 1549142570443,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #245
+Num contours: 1
+Angle 14.036240
+results string: 1549142570474,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #246
+Num contours: 1
+Angle 14.420769
+results string: 1549142570511,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #247
+Num contours: 1
+Angle 14.470291
+results string: 1549142570542,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #248
+Num contours: 1
+Angle 14.420769
+results string: 1549142570574,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #249
+Num contours: 1
+Angle 14.470291
+results string: 1549142570611,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #250
+Num contours: 1
+Angle 14.420769
+results string: 1549142570642,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #251
+Num contours: 1
+Angle 14.420769
+results string: 1549142570675,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #252
+Num contours: 1
+Angle 14.470291
+results string: 1549142570710,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #253
+Num contours: 1
+Angle 14.470291
+results string: 1549142570742,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #254
+Num contours: 1
+Angle 14.420769
+results string: 1549142570774,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #255
+Num contours: 1
+Angle 14.036240
+results string: 1549142570810,1,1335,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #256
+Num contours: 1
+Angle 14.420769
+results string: 1549142570842,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #257
+Num contours: 1
+Angle 14.420769
+results string: 1549142570874,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #258
+Num contours: 1
+Angle 14.036240
+results string: 1549142570910,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #259
+Num contours: 1
+Angle 14.420769
+results string: 1549142570942,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #260
+Num contours: 1
+Angle 14.470291
+results string: 1549142570974,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #261
+Num contours: 1
+Angle 14.470291
+results string: 1549142571010,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #262
+Num contours: 1
+Angle 14.420769
+results string: 1549142571042,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #263
+Num contours: 1
+Angle 14.420769
+results string: 1549142571074,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #264
+Num contours: 1
+Angle 14.420769
+results string: 1549142571110,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #265
+Num contours: 1
+Angle 14.420769
+results string: 1549142571142,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #266
+Num contours: 1
+Angle 14.036240
+results string: 1549142571174,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #267
+Num contours: 1
+Angle 14.470291
+results string: 1549142571210,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #268
+Num contours: 1
+Angle 14.470291
+results string: 1549142571242,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #269
+Num contours: 1
+Angle 14.420769
+results string: 1549142571274,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #270
+Num contours: 1
+Angle 14.420769
+results string: 1549142571310,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #271
+Num contours: 1
+Angle 14.420769
+results string: 1549142571342,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #272
+Num contours: 1
+Angle 14.470291
+results string: 1549142571374,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #273
+Num contours: 1
+Angle 14.420769
+results string: 1549142571410,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #274
+Num contours: 1
+Angle 14.036240
+results string: 1549142571442,1,1333,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #275
+Num contours: 1
+Angle 14.470291
+results string: 1549142571474,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #276
+Num contours: 1
+Angle 14.470291
+results string: 1549142571510,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #277
+Num contours: 1
+Angle 14.036240
+results string: 1549142571542,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #278
+Num contours: 1
+Angle 14.470291
+results string: 1549142571574,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #279
+Num contours: 1
+Angle 14.470291
+results string: 1549142571610,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #280
+Num contours: 1
+Angle 14.420769
+results string: 1549142571642,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #281
+Num contours: 1
+Angle 14.420769
+results string: 1549142571674,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #282
+Num contours: 1
+Angle 14.036240
+results string: 1549142571710,1,1335,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #283
+Num contours: 1
+Angle 14.470291
+results string: 1549142571742,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #284
+Num contours: 1
+Angle 14.420769
+results string: 1549142571774,1,1330.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #285
+Num contours: 1
+Angle 14.470291
+results string: 1549142571810,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #286
+Num contours: 1
+Angle 14.470291
+results string: 1549142571842,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #287
+Num contours: 1
+Angle 14.036240
+results string: 1549142571874,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #288
+Num contours: 1
+Angle 14.420769
+results string: 1549142571910,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #289
+Num contours: 1
+Angle 14.470291
+results string: 1549142571942,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #290
+Num contours: 1
+Angle 14.420769
+results string: 1549142571974,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #291
+Num contours: 1
+Angle 14.470291
+results string: 1549142572010,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #292
+Num contours: 1
+Angle 14.420769
+results string: 1549142572042,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #293
+Num contours: 1
+Angle 14.420769
+results string: 1549142572074,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #294
+Num contours: 1
+Angle 14.420769
+results string: 1549142572110,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #295
+Num contours: 1
+Angle 14.470291
+results string: 1549142572142,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #296
+Num contours: 1
+Angle 14.470291
+results string: 1549142572174,1,1331.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #297
+Num contours: 1
+Angle 14.420769
+results string: 1549142572210,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #298
+Num contours: 1
+Angle 14.470291
+results string: 1549142572242,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #299
+Num contours: 1
+Angle 14.420769
+results string: 1549142572274,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #300
+Num contours: 1
+Angle 14.470291
+results string: 1549142572310,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #301
+Num contours: 1
+Angle 14.470291
+results string: 1549142572342,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #302
+Num contours: 1
+Angle 14.420769
+results string: 1549142572374,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #303
+Num contours: 1
+Angle 14.420769
+results string: 1549142572410,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #304
+Num contours: 1
+Angle 14.420769
+results string: 1549142572447,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #305
+Num contours: 1
+Angle 14.470291
+results string: 1549142572474,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #306
+Num contours: 1
+Angle 14.036240
+results string: 1549142572510,1,1332.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #307
+Num contours: 1
+Angle 14.420769
+results string: 1549142572542,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #308
+Num contours: 1
+Angle 14.420769
+results string: 1549142572574,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #309
+Num contours: 1
+Angle 14.470291
+results string: 1549142572610,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #310
+Num contours: 1
+Angle 14.420769
+results string: 1549142572642,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #311
+Num contours: 1
+Angle 14.420769
+results string: 1549142572674,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #312
+Num contours: 1
+Angle 14.036240
+results string: 1549142572710,1,1334.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #313
+Num contours: 1
+Angle 14.420769
+results string: 1549142572742,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #314
+Num contours: 1
+Angle 14.420769
+results string: 1549142572774,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #315
+Num contours: 1
+Angle 14.036240
+results string: 1549142572810,1,1332.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #316
+Num contours: 1
+Angle 14.036240
+results string: 1549142572842,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #317
+Num contours: 1
+Angle 14.420769
+results string: 1549142572874,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #318
+Num contours: 1
+Angle 14.420769
+results string: 1549142572910,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #319
+Num contours: 1
+Angle 14.420769
+results string: 1549142572942,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #320
+Num contours: 1
+Angle 14.470291
+results string: 1549142572974,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #321
+Num contours: 1
+Angle 14.036240
+results string: 1549142573010,1,1335.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #322
+Num contours: 1
+Angle 14.420769
+results string: 1549142573042,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #323
+Num contours: 1
+Angle 14.470291
+results string: 1549142573074,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #324
+Num contours: 1
+Angle 14.420769
+results string: 1549142573110,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #325
+Num contours: 1
+Angle 14.420769
+results string: 1549142573142,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #326
+Num contours: 1
+Angle 14.036240
+results string: 1549142573174,1,1335.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #327
+Num contours: 1
+Angle 14.470291
+results string: 1549142573210,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #328
+Num contours: 1
+Angle 14.420769
+results string: 1549142573242,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #329
+Num contours: 1
+Angle 14.470291
+results string: 1549142573273,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #330
+Num contours: 1
+Angle 14.036240
+results string: 1549142573310,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #331
+Num contours: 1
+Angle 14.470291
+results string: 1549142573342,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #332
+Num contours: 1
+Angle 14.470291
+results string: 1549142573374,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #333
+Num contours: 1
+Angle 14.036240
+results string: 1549142573409,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #334
+Num contours: 1
+Angle 14.420769
+results string: 1549142573442,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #335
+Num contours: 1
+Angle 14.470291
+results string: 1549142573474,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #336
+Num contours: 1
+Angle 14.420769
+results string: 1549142573510,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #337
+Num contours: 1
+Angle 14.470291
+results string: 1549142573542,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #338
+Num contours: 1
+Angle 14.470291
+results string: 1549142573574,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #339
+Num contours: 1
+Angle 14.470291
+results string: 1549142573610,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #340
+Num contours: 1
+Angle 14.470291
+results string: 1549142573642,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #341
+Num contours: 1
+Angle 14.470291
+results string: 1549142573674,1,1331.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #342
+Num contours: 1
+Angle 14.420769
+results string: 1549142573710,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #343
+Num contours: 1
+Angle 14.420769
+results string: 1549142573742,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #344
+Num contours: 1
+Angle 14.420769
+results string: 1549142573774,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #345
+Num contours: 1
+Angle 14.036240
+results string: 1549142573810,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #346
+Num contours: 1
+Angle 14.036240
+results string: 1549142573842,1,1335,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #347
+Num contours: 1
+Angle 14.036240
+results string: 1549142573874,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #348
+Num contours: 1
+Angle 14.470291
+results string: 1549142573910,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #349
+Num contours: 1
+Angle 14.470291
+results string: 1549142573942,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #350
+Num contours: 1
+Angle 14.420769
+results string: 1549142573974,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #351
+Num contours: 1
+Angle 14.036240
+results string: 1549142574009,1,1335.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #352
+Num contours: 1
+Angle 14.470291
+results string: 1549142574041,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #353
+Num contours: 1
+Angle 14.036240
+results string: 1549142574074,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #354
+Num contours: 1
+Angle 14.470291
+results string: 1549142574110,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #355
+Num contours: 1
+Angle 14.420769
+results string: 1549142574141,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #356
+Num contours: 1
+Angle 14.420769
+results string: 1549142574174,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #357
+Num contours: 1
+Angle 14.470291
+results string: 1549142574210,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #358
+Num contours: 1
+Angle 14.420769
+results string: 1549142574242,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #359
+Num contours: 1
+Angle 14.420769
+results string: 1549142574273,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #360
+Num contours: 1
+Angle 14.470291
+results string: 1549142574310,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #361
+Num contours: 1
+Angle 14.470291
+results string: 1549142574342,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #362
+Num contours: 1
+Angle 14.470291
+results string: 1549142574373,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #363
+Num contours: 1
+Angle 14.420769
+results string: 1549142574410,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #364
+Num contours: 1
+Angle 14.470291
+results string: 1549142574442,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #365
+Num contours: 1
+Angle 14.470291
+results string: 1549142574473,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #366
+Num contours: 1
+Angle 14.420769
+results string: 1549142574510,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #367
+Num contours: 1
+Angle 14.036240
+results string: 1549142574541,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #368
+Num contours: 1
+Angle 14.420769
+results string: 1549142574573,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #369
+Num contours: 1
+Angle 14.420769
+results string: 1549142574610,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #370
+Num contours: 1
+Angle 14.420769
+results string: 1549142574641,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #371
+Num contours: 1
+Angle 14.420769
+results string: 1549142574673,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #372
+Num contours: 1
+Angle 14.420769
+results string: 1549142574709,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #373
+Num contours: 1
+Angle 14.470291
+results string: 1549142574742,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #374
+Num contours: 1
+Angle 14.420769
+results string: 1549142574774,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #375
+Num contours: 1
+Angle 14.420769
+results string: 1549142574810,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #376
+Num contours: 1
+Angle 14.470291
+results string: 1549142574842,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #377
+Num contours: 1
+Angle 14.036240
+results string: 1549142574873,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #378
+Num contours: 1
+Angle 14.036240
+results string: 1549142574909,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #379
+Num contours: 1
+Angle 14.470291
+results string: 1549142574941,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #380
+Num contours: 1
+Angle 14.420769
+results string: 1549142574973,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #381
+Num contours: 1
+Angle 14.420769
+results string: 1549142575009,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #382
+Num contours: 1
+Angle 14.470291
+results string: 1549142575041,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #383
+Num contours: 1
+Angle 14.036240
+results string: 1549142575073,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #384
+Num contours: 1
+Angle 14.470291
+results string: 1549142575109,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #385
+Num contours: 1
+Angle 14.420769
+results string: 1549142575141,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #386
+Num contours: 1
+Angle 14.036240
+results string: 1549142575173,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #387
+Num contours: 1
+Angle 14.036240
+results string: 1549142575209,1,1335,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #388
+Num contours: 1
+Angle 14.470291
+results string: 1549142575241,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #389
+Num contours: 1
+Angle 14.470291
+results string: 1549142575273,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #390
+Num contours: 1
+Angle 14.470291
+results string: 1549142575309,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #391
+Num contours: 1
+Angle 14.036240
+results string: 1549142575341,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #392
+Num contours: 1
+Angle 14.420769
+results string: 1549142575373,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #393
+Num contours: 1
+Angle 14.420769
+results string: 1549142575409,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #394
+Num contours: 1
+Angle 14.036240
+results string: 1549142575441,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #395
+Num contours: 1
+Angle 14.420769
+results string: 1549142575473,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #396
+Num contours: 1
+Angle 14.470291
+results string: 1549142575509,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #397
+Num contours: 1
+Angle 14.420769
+results string: 1549142575541,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #398
+Num contours: 1
+Angle 14.420769
+results string: 1549142575573,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #399
+Num contours: 1
+Angle 14.420769
+results string: 1549142575609,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #400
+Num contours: 1
+Angle 14.420769
+results string: 1549142575641,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #401
+Num contours: 1
+Angle 14.420769
+results string: 1549142575673,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #402
+Num contours: 1
+Angle 14.470291
+results string: 1549142575709,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #403
+Num contours: 1
+Angle 14.470291
+results string: 1549142575743,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #404
+Num contours: 1
+Angle 14.420769
+results string: 1549142575773,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #405
+Num contours: 1
+Angle 14.470291
+results string: 1549142575809,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #406
+Num contours: 1
+Angle 14.036240
+results string: 1549142575841,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #407
+Num contours: 1
+Angle 14.420769
+results string: 1549142575873,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #408
+Num contours: 1
+Angle 14.420769
+results string: 1549142575909,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #409
+Num contours: 1
+Angle 14.420769
+results string: 1549142575941,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #410
+Num contours: 1
+Angle 14.470291
+results string: 1549142575973,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #411
+Num contours: 1
+Angle 14.036240
+results string: 1549142576009,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #412
+Num contours: 1
+Angle 14.470291
+results string: 1549142576041,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #413
+Num contours: 1
+Angle 14.470291
+results string: 1549142576073,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #414
+Num contours: 1
+Angle 14.470291
+results string: 1549142576109,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #415
+Num contours: 1
+Angle 14.470291
+results string: 1549142576145,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #416
+Num contours: 1
+Angle 14.036240
+results string: 1549142576173,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #417
+Num contours: 1
+Angle 14.420769
+results string: 1549142576209,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #418
+Num contours: 1
+Angle 14.420769
+results string: 1549142576241,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #419
+Num contours: 1
+Angle 14.036240
+results string: 1549142576273,1,1332.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #420
+Num contours: 1
+Angle 14.470291
+results string: 1549142576309,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #421
+Num contours: 1
+Angle 14.420769
+results string: 1549142576341,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #422
+Num contours: 1
+Angle 14.470291
+results string: 1549142576373,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #423
+Num contours: 1
+Angle 14.470291
+results string: 1549142576409,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #424
+Num contours: 1
+Angle 14.036240
+results string: 1549142576441,1,1335.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #425
+Num contours: 1
+Angle 14.420769
+results string: 1549142576473,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #426
+Num contours: 1
+Angle 14.420769
+results string: 1549142576509,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #427
+Num contours: 1
+Angle 14.470291
+results string: 1549142576541,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #428
+Num contours: 1
+Angle 14.420769
+results string: 1549142576573,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #429
+Num contours: 1
+Angle 14.036240
+results string: 1549142576609,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #430
+Num contours: 1
+Angle 14.420769
+results string: 1549142576641,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #431
+Num contours: 1
+Angle 14.470291
+results string: 1549142576673,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #432
+Num contours: 1
+Angle 14.470291
+results string: 1549142576709,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #433
+Num contours: 1
+Angle 14.470291
+results string: 1549142576741,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #434
+Num contours: 1
+Angle 14.420769
+results string: 1549142576773,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #435
+Num contours: 1
+Angle 14.470291
+results string: 1549142576809,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #436
+Num contours: 1
+Angle 14.470291
+results string: 1549142576841,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #437
+Num contours: 1
+Angle 14.420769
+results string: 1549142576873,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #438
+Num contours: 1
+Angle 14.420769
+results string: 1549142576909,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #439
+Num contours: 1
+Angle 14.470291
+results string: 1549142576941,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #440
+Num contours: 1
+Angle 14.420769
+results string: 1549142576973,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #441
+Num contours: 1
+Angle 14.470291
+results string: 1549142577009,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #442
+Num contours: 1
+Angle 14.470291
+results string: 1549142577041,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #443
+Num contours: 1
+Angle 14.420769
+results string: 1549142577073,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #444
+Num contours: 1
+Angle 14.470291
+results string: 1549142577109,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #445
+Num contours: 1
+Angle 14.470291
+results string: 1549142577145,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #446
+Num contours: 1
+Angle 14.420769
+results string: 1549142577173,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #447
+Num contours: 1
+Angle 14.420769
+results string: 1549142577209,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #448
+Num contours: 1
+Angle 14.470291
+results string: 1549142577241,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #449
+Num contours: 1
+Angle 14.470291
+results string: 1549142577273,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #450
+Num contours: 1
+Angle 14.036240
+results string: 1549142577309,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #451
+Num contours: 1
+Angle 14.420769
+results string: 1549142577341,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #452
+Num contours: 1
+Angle 14.470291
+results string: 1549142577373,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #453
+Num contours: 1
+Angle 14.470291
+results string: 1549142577409,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #454
+Num contours: 1
+Angle 14.420769
+results string: 1549142577441,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #455
+Num contours: 1
+Angle 14.470291
+results string: 1549142577473,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #456
+Num contours: 1
+Angle 14.420769
+results string: 1549142577509,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #457
+Num contours: 1
+Angle 14.470291
+results string: 1549142577541,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #458
+Num contours: 1
+Angle 14.470291
+results string: 1549142577573,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #459
+Num contours: 1
+Angle 14.470291
+results string: 1549142577609,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #460
+Num contours: 1
+Angle 14.420769
+results string: 1549142577641,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #461
+Num contours: 1
+Angle 14.036240
+results string: 1549142577673,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #462
+Num contours: 1
+Angle 14.420769
+results string: 1549142577709,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #463
+Num contours: 1
+Angle 14.420769
+results string: 1549142577741,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #464
+Num contours: 1
+Angle 14.420769
+results string: 1549142577773,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #465
+Num contours: 1
+Angle 14.036240
+results string: 1549142577809,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #466
+Num contours: 1
+Angle 14.470291
+results string: 1549142577849,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #467
+Num contours: 1
+Angle 14.470291
+results string: 1549142577873,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #468
+Num contours: 1
+Angle 14.470291
+results string: 1549142577909,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #469
+Num contours: 1
+Angle 14.420769
+results string: 1549142577941,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #470
+Num contours: 1
+Angle 14.470291
+results string: 1549142577973,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #471
+Num contours: 1
+Angle 14.470291
+results string: 1549142578009,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #472
+Num contours: 1
+Angle 14.470291
+results string: 1549142578041,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #473
+Num contours: 1
+Angle 14.470291
+results string: 1549142578073,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #474
+Num contours: 1
+Angle 14.470291
+results string: 1549142578109,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #475
+Num contours: 1
+Angle 14.470291
+results string: 1549142578147,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #476
+Num contours: 1
+Angle 14.470291
+results string: 1549142578172,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #477
+Num contours: 1
+Angle 14.470291
+results string: 1549142578209,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #478
+Num contours: 1
+Angle 14.420769
+results string: 1549142578244,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #479
+Num contours: 1
+Angle 14.470291
+results string: 1549142578273,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #480
+Num contours: 1
+Angle 14.036240
+results string: 1549142578309,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #481
+Num contours: 1
+Angle 14.470291
+results string: 1549142578340,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #482
+Num contours: 1
+Angle 14.420769
+results string: 1549142578373,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #483
+Num contours: 1
+Angle 14.420769
+results string: 1549142578409,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #484
+Num contours: 1
+Angle 14.420769
+results string: 1549142578442,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #485
+Num contours: 1
+Angle 14.470291
+results string: 1549142578473,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #486
+Num contours: 1
+Angle 14.036240
+results string: 1549142578509,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #487
+Num contours: 1
+Angle 14.470291
+results string: 1549142578541,1,1331.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #488
+Num contours: 1
+Angle 14.420769
+results string: 1549142578573,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #489
+Num contours: 1
+Angle 14.420769
+results string: 1549142578609,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #490
+Num contours: 1
+Angle 14.470291
+results string: 1549142578641,1,1331.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #491
+Num contours: 1
+Angle 14.036240
+results string: 1549142578673,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #492
+Num contours: 1
+Angle 14.470291
+results string: 1549142578709,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #493
+Num contours: 1
+Angle 14.036240
+results string: 1549142578740,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #494
+Num contours: 1
+Angle 14.470291
+results string: 1549142578773,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #495
+Num contours: 1
+Angle 14.036240
+results string: 1549142578809,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #496
+Num contours: 1
+Angle 14.036240
+results string: 1549142578842,1,1335.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #497
+Num contours: 1
+Angle 14.470291
+results string: 1549142578873,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #498
+Num contours: 1
+Angle 14.470291
+results string: 1549142578909,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #499
+Num contours: 1
+Angle 14.036240
+results string: 1549142578941,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #500
+Num contours: 1
+Angle 14.036240
+results string: 1549142578973,1,1332.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #501
+Num contours: 1
+Angle 14.036240
+results string: 1549142579009,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #502
+Num contours: 1
+Angle 14.036240
+results string: 1549142579040,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #503
+Num contours: 1
+Angle 14.420769
+results string: 1549142579073,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #504
+Num contours: 1
+Angle 14.420769
+results string: 1549142579109,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #505
+Num contours: 1
+Angle 14.420769
+results string: 1549142579140,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #506
+Num contours: 1
+Angle 14.420769
+results string: 1549142579173,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #507
+Num contours: 1
+Angle 14.470291
+results string: 1549142579209,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #508
+Num contours: 1
+Angle 14.470291
+results string: 1549142579241,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #509
+Num contours: 1
+Angle 14.420769
+results string: 1549142579273,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #510
+Num contours: 1
+Angle 14.036240
+results string: 1549142579309,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #511
+Num contours: 1
+Angle 14.470291
+results string: 1549142579341,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #512
+Num contours: 1
+Angle 14.470291
+results string: 1549142579372,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #513
+Num contours: 1
+Angle 14.470291
+results string: 1549142579409,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #514
+Num contours: 1
+Angle 14.036240
+results string: 1549142579441,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #515
+Num contours: 1
+Angle 14.420769
+results string: 1549142579473,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #516
+Num contours: 1
+Angle 14.470291
+results string: 1549142579509,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #517
+Num contours: 1
+Angle 14.420769
+results string: 1549142579548,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #518
+Num contours: 1
+Angle 14.470291
+results string: 1549142579572,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #519
+Num contours: 1
+Angle 14.470291
+results string: 1549142579609,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #520
+Num contours: 1
+Angle 14.036240
+results string: 1549142579641,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #521
+Num contours: 1
+Angle 14.420769
+results string: 1549142579673,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #522
+Num contours: 1
+Angle 14.036240
+results string: 1549142579709,1,1335.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #523
+Num contours: 1
+Angle 14.036240
+results string: 1549142579740,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #524
+Num contours: 1
+Angle 14.470291
+results string: 1549142579772,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #525
+Num contours: 1
+Angle 14.036240
+results string: 1549142579809,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #526
+Num contours: 1
+Angle 14.470291
+results string: 1549142579840,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #527
+Num contours: 1
+Angle 14.470291
+results string: 1549142579872,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #528
+Num contours: 1
+Angle 14.420769
+results string: 1549142579909,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #529
+Num contours: 1
+Angle 14.470291
+results string: 1549142579940,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #530
+Num contours: 1
+Angle 14.420769
+results string: 1549142579973,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #531
+Num contours: 1
+Angle 14.036240
+results string: 1549142580008,1,1332.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #532
+Num contours: 1
+Angle 14.036240
+results string: 1549142580041,1,1335,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #533
+Num contours: 1
+Angle 14.470291
+results string: 1549142580073,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #534
+Num contours: 1
+Angle 14.470291
+results string: 1549142580109,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #535
+Num contours: 1
+Angle 14.420769
+results string: 1549142580143,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #536
+Num contours: 1
+Angle 14.470291
+results string: 1549142580172,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #537
+Num contours: 1
+Angle 14.420769
+results string: 1549142580208,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #538
+Num contours: 1
+Angle 14.036240
+results string: 1549142580241,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #539
+Num contours: 1
+Angle 14.470291
+results string: 1549142580272,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #540
+Num contours: 1
+Angle 14.420769
+results string: 1549142580309,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #541
+Num contours: 1
+Angle 14.470291
+results string: 1549142580340,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #542
+Num contours: 1
+Angle 14.470291
+results string: 1549142580373,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #543
+Num contours: 1
+Angle 14.420769
+results string: 1549142580409,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #544
+Num contours: 1
+Angle 14.036240
+results string: 1549142580440,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #545
+Num contours: 1
+Angle 14.470291
+results string: 1549142580473,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #546
+Num contours: 1
+Angle 14.420769
+results string: 1549142580509,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #547
+Num contours: 1
+Angle 14.036240
+results string: 1549142580540,1,1335,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #548
+Num contours: 1
+Angle 14.420769
+results string: 1549142580572,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #549
+Num contours: 1
+Angle 14.420769
+results string: 1549142580608,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #550
+Num contours: 1
+Angle 14.470291
+results string: 1549142580640,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #551
+Num contours: 1
+Angle 14.470291
+results string: 1549142580672,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #552
+Num contours: 1
+Angle 14.420769
+results string: 1549142580708,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #553
+Num contours: 1
+Angle 14.470291
+results string: 1549142580740,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #554
+Num contours: 1
+Angle 14.470291
+results string: 1549142580772,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #555
+Num contours: 1
+Angle 14.470291
+results string: 1549142580808,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #556
+Num contours: 1
+Angle 14.420769
+results string: 1549142580840,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #557
+Num contours: 1
+Angle 14.470291
+results string: 1549142580872,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #558
+Num contours: 1
+Angle 14.420769
+results string: 1549142580908,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #559
+Num contours: 1
+Angle 14.470291
+results string: 1549142580940,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #560
+Num contours: 1
+Angle 14.036240
+results string: 1549142580972,1,1335.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #561
+Num contours: 1
+Angle 14.470291
+results string: 1549142581008,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #562
+Num contours: 1
+Angle 14.420769
+results string: 1549142581040,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #563
+Num contours: 1
+Angle 14.470291
+results string: 1549142581072,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #564
+Num contours: 1
+Angle 14.036240
+results string: 1549142581109,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #565
+Num contours: 1
+Angle 14.381393
+results string: 1549142581142,1,1331.5,14.3814,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #566
+Num contours: 1
+Angle 14.036240
+results string: 1549142581172,1,1335,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #567
+Num contours: 1
+Angle 14.036240
+results string: 1549142581208,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #568
+Num contours: 1
+Angle 14.420769
+results string: 1549142581240,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #569
+Num contours: 1
+Angle 14.420769
+results string: 1549142581272,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #570
+Num contours: 1
+Angle 14.470291
+results string: 1549142581308,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #571
+Num contours: 1
+Angle 14.036240
+results string: 1549142581340,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #572
+Num contours: 1
+Angle 14.420769
+results string: 1549142581372,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #573
+Num contours: 1
+Angle 14.036240
+results string: 1549142581408,1,1335.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #574
+Num contours: 1
+Angle 14.036240
+results string: 1549142581440,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #575
+Num contours: 1
+Angle 14.420769
+results string: 1549142581472,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #576
+Num contours: 1
+Angle 14.420769
+results string: 1549142581508,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #577
+Num contours: 1
+Angle 14.420769
+results string: 1549142581540,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #578
+Num contours: 1
+Angle 14.420769
+results string: 1549142581572,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #579
+Num contours: 1
+Angle 14.470291
+results string: 1549142581608,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #580
+Num contours: 1
+Angle 14.470291
+results string: 1549142581640,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #581
+Num contours: 1
+Angle 14.470291
+results string: 1549142581672,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #582
+Num contours: 1
+Angle 14.420769
+results string: 1549142581709,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #583
+Num contours: 1
+Angle 14.036240
+results string: 1549142581741,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #584
+Num contours: 1
+Angle 14.420769
+results string: 1549142581772,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #585
+Num contours: 1
+Angle 14.381393
+results string: 1549142581808,1,1331,14.3814,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #586
+Num contours: 1
+Angle 14.470291
+results string: 1549142581840,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #587
+Num contours: 1
+Angle 14.470291
+results string: 1549142581872,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #588
+Num contours: 1
+Angle 14.036240
+results string: 1549142581908,1,1335,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #589
+Num contours: 1
+Angle 14.036240
+results string: 1549142581940,1,1335,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #590
+Num contours: 1
+Angle 14.420769
+results string: 1549142581972,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #591
+Num contours: 1
+Angle 14.036240
+results string: 1549142582008,1,1335.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #592
+Num contours: 1
+Angle 14.470291
+results string: 1549142582040,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #593
+Num contours: 1
+Angle 14.420769
+results string: 1549142582072,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #594
+Num contours: 1
+Angle 14.420769
+results string: 1549142582108,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #595
+Num contours: 1
+Angle 14.470291
+results string: 1549142582140,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #596
+Num contours: 1
+Angle 14.381393
+results string: 1549142582172,1,1331,14.3814,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #597
+Num contours: 1
+Angle 14.420769
+results string: 1549142582208,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #598
+Num contours: 1
+Angle 14.470291
+results string: 1549142582240,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #599
+Num contours: 1
+Angle 14.470291
+results string: 1549142582272,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #600
+Num contours: 1
+Angle 14.420769
+results string: 1549142582308,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #601
+Num contours: 1
+Angle 14.036240
+results string: 1549142582340,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #602
+Num contours: 1
+Angle 14.420769
+results string: 1549142582372,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #603
+Num contours: 1
+Angle 14.036240
+results string: 1549142582408,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #604
+Num contours: 1
+Angle 14.470291
+results string: 1549142582440,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #605
+Num contours: 1
+Angle 14.420769
+results string: 1549142582472,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #606
+Num contours: 1
+Angle 14.420769
+results string: 1549142582508,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #607
+Num contours: 1
+Angle 14.420769
+results string: 1549142582547,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #608
+Num contours: 1
+Angle 14.470291
+results string: 1549142582572,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #609
+Num contours: 1
+Angle 14.470291
+results string: 1549142582608,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #610
+Num contours: 1
+Angle 14.470291
+results string: 1549142582640,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #611
+Num contours: 1
+Angle 14.036240
+results string: 1549142582672,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #612
+Num contours: 1
+Angle 14.420769
+results string: 1549142582708,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #613
+Num contours: 1
+Angle 14.470291
+results string: 1549142582740,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #614
+Num contours: 1
+Angle 14.036240
+results string: 1549142582772,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #615
+Num contours: 1
+Angle 14.470291
+results string: 1549142582808,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #616
+Num contours: 1
+Angle 14.036240
+results string: 1549142582840,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #617
+Num contours: 1
+Angle 14.420769
+results string: 1549142582872,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #618
+Num contours: 1
+Angle 14.420769
+results string: 1549142582908,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #619
+Num contours: 1
+Angle 14.470291
+results string: 1549142582940,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #620
+Num contours: 1
+Angle 14.036240
+results string: 1549142582972,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #621
+Num contours: 1
+Angle 14.420769
+results string: 1549142583008,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #622
+Num contours: 1
+Angle 14.470291
+results string: 1549142583040,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #623
+Num contours: 1
+Angle 14.470291
+results string: 1549142583072,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #624
+Num contours: 1
+Angle 14.420769
+results string: 1549142583108,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #625
+Num contours: 1
+Angle 14.420769
+results string: 1549142583140,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #626
+Num contours: 1
+Angle 14.420769
+results string: 1549142583172,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #627
+Num contours: 1
+Angle 14.420769
+results string: 1549142583208,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #628
+Num contours: 1
+Angle 14.420769
+results string: 1549142583240,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #629
+Num contours: 1
+Angle 14.036240
+results string: 1549142583272,1,1335,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #630
+Num contours: 1
+Angle 14.036240
+results string: 1549142583308,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #631
+Num contours: 1
+Angle 14.420769
+results string: 1549142583340,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #632
+Num contours: 1
+Angle 14.470291
+results string: 1549142583372,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #633
+Num contours: 1
+Angle 14.470291
+results string: 1549142583408,1,1331,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #634
+Num contours: 1
+Angle 14.470291
+results string: 1549142583440,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #635
+Num contours: 1
+Angle 14.470291
+results string: 1549142583472,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #636
+Num contours: 1
+Angle 14.420769
+results string: 1549142583508,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #637
+Num contours: 1
+Angle 14.470291
+results string: 1549142583540,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #638
+Num contours: 1
+Angle 14.420769
+results string: 1549142583572,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #639
+Num contours: 1
+Angle 14.470291
+results string: 1549142583608,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #640
+Num contours: 1
+Angle 14.470291
+results string: 1549142583640,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #641
+Num contours: 1
+Angle 14.420769
+results string: 1549142583672,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #642
+Num contours: 1
+Angle 14.470291
+results string: 1549142583708,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #643
+Num contours: 1
+Angle 14.036240
+results string: 1549142583740,1,1335.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #644
+Num contours: 1
+Angle 14.420769
+results string: 1549142583772,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #645
+Num contours: 1
+Angle 14.420769
+results string: 1549142583808,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #646
+Num contours: 1
+Angle 14.470291
+results string: 1549142583840,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #647
+Num contours: 1
+Angle 14.470291
+results string: 1549142583872,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #648
+Num contours: 1
+Angle 14.036240
+results string: 1549142583908,1,1335.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #649
+Num contours: 1
+Angle 14.420769
+results string: 1549142583940,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #650
+Num contours: 1
+Angle 14.470291
+results string: 1549142583972,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #651
+Num contours: 1
+Angle 14.420769
+results string: 1549142584008,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #652
+Num contours: 1
+Angle 14.036240
+results string: 1549142584040,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #653
+Num contours: 1
+Angle 14.470291
+results string: 1549142584072,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #654
+Num contours: 1
+Angle 14.420769
+results string: 1549142584108,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #655
+Num contours: 1
+Angle 14.470291
+results string: 1549142584140,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #656
+Num contours: 1
+Angle 14.470291
+results string: 1549142584172,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #657
+Num contours: 1
+Angle 14.470291
+results string: 1549142584208,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #658
+Num contours: 1
+Angle 14.420769
+results string: 1549142584240,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #659
+Num contours: 1
+Angle 14.420769
+results string: 1549142584272,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #660
+Num contours: 1
+Angle 14.470291
+results string: 1549142584308,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #661
+Num contours: 1
+Angle 14.420769
+results string: 1549142584340,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #662
+Num contours: 1
+Angle 14.470291
+results string: 1549142584372,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #663
+Num contours: 1
+Angle 14.470291
+results string: 1549142584408,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #664
+Num contours: 1
+Angle 14.470291
+results string: 1549142584440,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #665
+Num contours: 1
+Angle 14.470291
+results string: 1549142584472,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #666
+Num contours: 1
+Angle 14.470291
+results string: 1549142584508,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #667
+Num contours: 1
+Angle 14.420769
+results string: 1549142584540,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #668
+Num contours: 1
+Angle 14.420769
+results string: 1549142584572,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #669
+Num contours: 1
+Angle 14.470291
+results string: 1549142584608,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #670
+Num contours: 1
+Angle 14.470291
+results string: 1549142584640,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #671
+Num contours: 1
+Angle 14.470291
+results string: 1549142584671,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #672
+Num contours: 1
+Angle 14.470291
+results string: 1549142584708,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #673
+Num contours: 1
+Angle 14.470291
+results string: 1549142584740,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #674
+Num contours: 1
+Angle 14.470291
+results string: 1549142584772,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #675
+Num contours: 1
+Angle 14.036240
+results string: 1549142584808,1,1335,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #676
+Num contours: 1
+Angle 14.470291
+results string: 1549142584840,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #677
+Num contours: 1
+Angle 14.036240
+results string: 1549142584872,1,1335.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #678
+Num contours: 1
+Angle 14.036240
+results string: 1549142584908,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #679
+Num contours: 1
+Angle 14.420769
+results string: 1549142584942,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #680
+Num contours: 1
+Angle 14.420769
+results string: 1549142584972,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #681
+Num contours: 1
+Angle 14.420769
+results string: 1549142585008,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #682
+Num contours: 1
+Angle 14.470291
+results string: 1549142585040,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #683
+Num contours: 1
+Angle 14.420769
+results string: 1549142585072,1,1330.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #684
+Num contours: 1
+Angle 14.470291
+results string: 1549142585108,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #685
+Num contours: 1
+Angle 14.036240
+results string: 1549142585139,1,1333,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #686
+Num contours: 1
+Angle 14.470291
+results string: 1549142585172,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #687
+Num contours: 1
+Angle 14.036240
+results string: 1549142585208,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #688
+Num contours: 1
+Angle 14.420769
+results string: 1549142585240,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #689
+Num contours: 1
+Angle 14.420769
+results string: 1549142585272,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #690
+Num contours: 1
+Angle 14.470291
+results string: 1549142585308,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #691
+Num contours: 1
+Angle 14.470291
+results string: 1549142585340,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #692
+Num contours: 1
+Angle 14.420769
+results string: 1549142585372,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #693
+Num contours: 1
+Angle 14.036240
+results string: 1549142585408,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #694
+Num contours: 1
+Angle 14.470291
+results string: 1549142585440,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #695
+Num contours: 1
+Angle 14.420769
+results string: 1549142585472,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #696
+Num contours: 1
+Angle 14.036240
+results string: 1549142585508,1,1335.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #697
+Num contours: 1
+Angle 14.470291
+results string: 1549142585540,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #698
+Num contours: 1
+Angle 14.420769
+results string: 1549142585571,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #699
+Num contours: 1
+Angle 14.470291
+results string: 1549142585608,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #700
+Num contours: 1
+Angle 14.420769
+results string: 1549142585640,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #701
+Num contours: 1
+Angle 14.420769
+results string: 1549142585671,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #702
+Num contours: 1
+Angle 14.470291
+results string: 1549142585708,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #703
+Num contours: 1
+Angle 14.470291
+results string: 1549142585739,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #704
+Num contours: 1
+Angle 14.470291
+results string: 1549142585772,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #705
+Num contours: 1
+Angle 14.036240
+results string: 1549142585808,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #706
+Num contours: 1
+Angle 14.470291
+results string: 1549142585840,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #707
+Num contours: 1
+Angle 14.036240
+results string: 1549142585872,1,1335.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #708
+Num contours: 1
+Angle 14.036240
+results string: 1549142585908,1,1334,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #709
+Num contours: 1
+Angle 14.036240
+results string: 1549142585940,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #710
+Num contours: 1
+Angle 14.470291
+results string: 1549142585972,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #711
+Num contours: 1
+Angle 14.470291
+results string: 1549142586008,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #712
+Num contours: 1
+Angle 14.420769
+results string: 1549142586040,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #713
+Num contours: 1
+Angle 14.470291
+results string: 1549142586072,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #714
+Num contours: 1
+Angle 14.036240
+results string: 1549142586108,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #715
+Num contours: 1
+Angle 14.470291
+results string: 1549142586139,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #716
+Num contours: 1
+Angle 14.420769
+results string: 1549142586172,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #717
+Num contours: 1
+Angle 14.036240
+results string: 1549142586208,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #718
+Num contours: 1
+Angle 14.420769
+results string: 1549142586240,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #719
+Num contours: 1
+Angle 14.470291
+results string: 1549142586272,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #720
+Num contours: 1
+Angle 14.036240
+results string: 1549142586308,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #721
+Num contours: 1
+Angle 14.470291
+results string: 1549142586340,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #722
+Num contours: 1
+Angle 14.036240
+results string: 1549142586372,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #723
+Num contours: 1
+Angle 14.420769
+results string: 1549142586408,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #724
+Num contours: 1
+Angle 14.036240
+results string: 1549142586440,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #725
+Num contours: 1
+Angle 14.470291
+results string: 1549142586472,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #726
+Num contours: 1
+Angle 14.036240
+results string: 1549142586508,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #727
+Num contours: 1
+Angle 14.470291
+results string: 1549142586540,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #728
+Num contours: 1
+Angle 14.470291
+results string: 1549142586572,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #729
+Num contours: 1
+Angle 14.420769
+results string: 1549142586608,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #730
+Num contours: 1
+Angle 14.036240
+results string: 1549142586640,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #731
+Num contours: 1
+Angle 14.470291
+results string: 1549142586672,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #732
+Num contours: 1
+Angle 14.036240
+results string: 1549142586708,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #733
+Num contours: 1
+Angle 14.036240
+results string: 1549142586740,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #734
+Num contours: 1
+Angle 14.470291
+results string: 1549142586772,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #735
+Num contours: 1
+Angle 14.420769
+results string: 1549142586808,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #736
+Num contours: 1
+Angle 14.036240
+results string: 1549142586840,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #737
+Num contours: 1
+Angle 14.420769
+results string: 1549142586872,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #738
+Num contours: 1
+Angle 14.036240
+results string: 1549142586908,1,1334.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #739
+Num contours: 1
+Angle 14.420769
+results string: 1549142586940,1,1332,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #740
+Num contours: 1
+Angle 14.470291
+results string: 1549142586971,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #741
+Num contours: 1
+Angle 14.470291
+results string: 1549142587008,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #742
+Num contours: 1
+Angle 14.470291
+results string: 1549142587040,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #743
+Num contours: 1
+Angle 14.036240
+results string: 1549142587071,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #744
+Num contours: 1
+Angle 14.470291
+results string: 1549142587108,1,1332,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #745
+Num contours: 1
+Angle 14.420769
+results string: 1549142587140,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #746
+Num contours: 1
+Angle 14.036240
+results string: 1549142587171,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #747
+Num contours: 1
+Angle 14.036240
+results string: 1549142587208,1,1333.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #748
+Num contours: 1
+Angle 14.470291
+results string: 1549142587240,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #749
+Num contours: 1
+Angle 14.420769
+results string: 1549142587271,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #750
+Num contours: 1
+Angle 14.420769
+results string: 1549142587308,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #751
+Num contours: 1
+Angle 14.470291
+results string: 1549142587340,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #752
+Num contours: 1
+Angle 14.420769
+results string: 1549142587371,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #753
+Num contours: 1
+Angle 14.036240
+results string: 1549142587408,1,1335,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #754
+Num contours: 1
+Angle 14.036240
+results string: 1549142587440,1,1335.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #755
+Num contours: 1
+Angle 14.470291
+results string: 1549142587471,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #756
+Num contours: 1
+Angle 14.420769
+results string: 1549142587508,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #757
+Num contours: 1
+Angle 14.036240
+results string: 1549142587540,1,1334.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #758
+Num contours: 1
+Angle 14.036240
+results string: 1549142587571,1,1335.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #759
+Num contours: 1
+Angle 14.470291
+results string: 1549142587608,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #760
+Num contours: 1
+Angle 14.420769
+results string: 1549142587640,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #761
+Num contours: 1
+Angle 14.420769
+results string: 1549142587671,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #762
+Num contours: 1
+Angle 14.036240
+results string: 1549142587708,1,1335.5,14.0362,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #763
+Num contours: 1
+Angle 14.420769
+results string: 1549142587740,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #764
+Num contours: 1
+Angle 14.420769
+results string: 1549142587771,1,1331.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #765
+Num contours: 1
+Angle 14.420769
+results string: 1549142587808,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #766
+Num contours: 1
+Angle 14.420769
+results string: 1549142587843,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #767
+Num contours: 1
+Angle 14.470291
+results string: 1549142587871,1,1333,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #768
+Num contours: 1
+Angle 14.420769
+results string: 1549142587908,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #769
+Num contours: 1
+Angle 14.470291
+results string: 1549142587942,1,1332.5,14.4703,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #770
+Num contours: 1
+Angle 14.420769
+results string: 1549142587971,1,1332.5,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #771
+Num contours: 1
+Angle 14.420769
+results string: 1549142588008,1,1333,14.4208,281,194,277,166,297,168,266,221,285,223,20,19,55,55
+Out image stats: (depth 8), (nchannels 3)
+frame #772
+Num contours

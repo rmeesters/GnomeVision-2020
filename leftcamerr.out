@@ -1,0 +1,5 @@
+ERROR: Pipeline doesn't want to pause.
+ERROR: from element /GstPipeline:pipeline0/GstV4l2Src:v4l2src0: Cannot identify device '/dev/video1'.
+Additional debug info:
+v4l2_calls.c(606): gst_v4l2_open (): /GstPipeline:pipeline0/GstV4l2Src:v4l2src0:
+system error: No such file or directory

@@ -1,0 +1,10 @@
+Failed to open /dev/video0: No such file or directory
+Failed to open /dev/video0: No such file or directory
+GStreamer Plugin: Embedded video playback halted; module v4l2src0 reported: Cannot identify device '/dev/video0'.
+OpenCV Error: Unspecified error (GStreamer: unable to start pipeline
+) in cvCaptureFromCAM_GStreamer, file src/opencv-code/cap_gstreamer.cpp, line 658
+terminate called after throwing an instance of 'cv::Exception'
+  what():  src/opencv-code/cap_gstreamer.cpp:658: error: (-2) GStreamer: unable to start pipeline
+ in function cvCaptureFromCAM_GStreamer
+
+./GnomeVisionTest.sh: line 7:  2504 Aborted                 (core dumped) ./gstream_cv 1
