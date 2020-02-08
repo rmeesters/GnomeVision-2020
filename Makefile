@@ -3,7 +3,7 @@ LOCAL_INC  := -Isrc/opencv-code/ -Isrc/utility/
 NTCORE_INC := -I/usr/local/wpilib/include/ntcore/ -I/usr/local/wpilib/include/wpiutil/ 
 INC        := ${NTCORE_INC} ${LOCAL_INC} ${GST_INC} -I/usr/include/opencv4
 
-LIBS       := -L/usr/local/wpilib/lib/ `pkg-config --cflags --libs opencv gstreamer-1.0` -lgstapp-1.0 -lgstriff-1.0 -lgstbase-1.0 -lgstvideo-1.0 -lgstpbutils-1.0 -lntcore -lwpiutil -lpthread
+LIBS       := -L/usr/local/wpilib/lib/ `pkg-config --cflags --libs opencv4 gstreamer-1.0` -lgstapp-1.0 -lgstriff-1.0 -lgstbase-1.0 -lgstvideo-1.0 -lgstpbutils-1.0 -lntcore -lwpiutil -lpthread
 
 SOURCES    := $(shell find src -type f -name *.cpp)
 OBJECTS    := $(patsubst src/%,obj/%,$(SOURCES:.cpp=.o))

@@ -4,3 +4,5 @@ NvMMLiteBlockCreate : Block : BlockType = 4
 H264: Profile = 66, Level = 0 
 NT: ERROR: could not resolve roborio-2013-frc.local address (TCPConnector.cpp:99)
 NT: ERROR: could not resolve roborio-2013-frc.local address (TCPConnector.cpp:99)
+NT: ERROR: could not resolve roborio-2013-frc.local address (TCPConnector.cpp:99)
+NT: ERROR: could not resolve roborio-2013-frc.local address (TCPConnector.cpp:99)

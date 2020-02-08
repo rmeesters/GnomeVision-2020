@@ -5,7 +5,7 @@
 using namespace std;
 
 shared_ptr<NetworkTable> myNetworkTable; //our networktable for reading/writing
-string netTableAddress = "roboRIO-2013-FRC.local"; //address of the rio
+string netTableAddress = "roborio-2013-frc.local"; //address of the rio 
 
 //useful for testing OpenCV drawing to see you can modify an image
 void fillCircle (cv::Mat img, int rad, cv::Point center);
@@ -16,7 +16,7 @@ int
 device = 0, //bc we are using video2 in this case - RM Set for video used width = 640, 
 width = 640,
 height = 480,
-framerate = 30, 
+framerate = 20, 
 mjpeg = false; //mjpeg is not better than just grabbing a raw image in this case
 
 //network parameters
@@ -24,11 +24,12 @@ int
 bitrate = 300000, //kbit/sec over network  - original 600000
 port_stream = 5806, //destination port for raw image
 port_thresh = 5805; //destination port for thresholded image
-string ip = "10.20.13.230"; //destination ip - RM Changed to HostnameA
+string ip = "10.0.0.171"; //destination ip - RM Changed to HostnameA
+//string ip = "localhost"; //test localhost streaming
 
 string tableName = "CVResultsTable";
 
-// bool verbose = true; //set to true for diagnostics and testing
+bool verbose = true; //set to true for diagnostics and testing
 
 void flash_good_settings() {
     char setting_script[100];
@@ -51,7 +52,7 @@ int main (int argc, char* argv[]) {
     //initialize NetworkTables
     NetworkTable::SetClientMode();
     NetworkTable::SetDSClientEnabled(false);
-    NetworkTable::SetIPAddress(llvm::StringRef(netTableAddress));
+    NetworkTable::SetIPAddress(wpi::StringRef(netTableAddress)); //Changed "llvm" to "wpi"
     NetworkTable::Initialize();
     if (verbose) printf ("Initialized table\n");
     myNetworkTable = NetworkTable::GetTable(tableName);

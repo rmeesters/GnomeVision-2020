@@ -28,14 +28,14 @@ extern std::string createReadPipeline (int vid_device, int width, int height,
     if (mjpeg) {
         sprintf (buff,
             "v4l2src device=/dev/video%d ! "
-            "image/jpeg,format=(string)YUY2,width=(int)%d,height=(int)%d,framerate=(fraction)%d/1 ! "
+            "image/jpeg,format=(string)BGR,width=(int)%d,height=(int)%d,framerate=(fraction)%d/1 ! "
             "jpegdec ! autovideoconvert ! appsink",
             vid_device, width, height, framerate);
     } 
     else {
         sprintf (buff,
             "v4l2src device=/dev/video%d ! "
-            "video/x-raw,format=(string)YUY2,width=(int)%d,height=(int)%d,framerate=(fraction)%d/1 ! "
+            "video/x-raw,format=(string)BGR,width=(int)%d,height=(int)%d,framerate=(fraction)%d/1 ! "
             "autovideoconvert ! appsink",
             vid_device, width, height, framerate);
     }
@@ -69,10 +69,9 @@ extern std::string createReadPipelineSplit (int vid_device, int width, int heigh
     if (mjpeg) {
         sprintf (buff,
             "v4l2src device=/dev/video%d ! "
-            "image/jpeg,format=(string)YUY2,width=(int)%d,height=(int)%d,framerate=(fraction)%d/1 ! jpegdec ! "
-            "videoconvert ! video/x-raw,format=BGR ! " // Change Format to BGR
+            "image/jpeg,format=(string)BGR,width=(int)%d,height=(int)%d,framerate=(fraction)%d/1 ! jpegdec ! "
             "tee name=split "
-                "split. ! queue ! videoconvert ! nvvidconv ! nvv4l2h264enc bitrate=%d ! "
+                "split. ! queue ! videoconvert ! omxh264enc bitrate=%d ! "
                     "video/x-h264, stream-format=(string)byte-stream ! h264parse ! "
                     "rtph264pay ! udpsink host=%s port=%d "
                 "split. ! queue ! autovideoconvert ! appsink",
@@ -82,13 +81,10 @@ extern std::string createReadPipelineSplit (int vid_device, int width, int heigh
     else {
         sprintf (buff,
             "v4l2src device=/dev/video%d ! "
-            // "video/x-raw,format=(string)YUY2,width=(int)%d,height=(int)%d,framerate=(fraction)%d/1 ! "
-	    "video/x-raw,format=YUY2,width=%d,height=%d,framerate=%d/1 ! "
-            "videoconvert ! video/x-raw,format=BGR ! " // Change Format to BGR
+            "video/x-raw,format=(string)BGR,width=(int)%d,height=(int)%d,framerate=(fraction)%d/1 ! "
             "tee name=split "
-                "split. ! queue ! videoconvert ! nvvidconv ! nvv4l2h264enc bitrate=%d ! "
-                    // "video/x-h264, stream-format=(string)byte-stream ! h264parse ! "
-                    "video/x-h264, stream-format=byte-stream ! h264parse ! "
+                "split. ! queue ! videoconvert ! omxh264enc bitrate=%d ! "
+                    "video/x-h264, stream-format=(string)byte-stream ! h264parse ! "
                     "rtph264pay ! udpsink host=%s port=%d "
                 "split. ! queue ! autovideoconvert ! appsink",
             //"appsink",
@@ -117,11 +113,9 @@ extern std::string create_write_pipeline (int width, int height, int framerate,
     char buff[500];
     sprintf (buff,
         "appsrc ! "
-        // "video/x-raw, format=(string)YUY2, width=(int)%d, height=(int)%d, framerate=(fraction)%d/1 ! "
-        "video/x-raw, format=YUY2, width=%d, height=%d, framerate=%d/1 ! "
-        // "videoconvert ! omxh264enc bitrate=%d ! video/x-h264, stream-format=(string)byte-stream ! h264parse ! rtph264pay ! "
-        "videoconvert ! nvvidconv ! nvv4l2h264enc bitrate=%d ! video/x-h264, stream-format=byte-stream ! "
-        "h264parse ! rtph264pay ! udpsink host=%s port=%d",
+        "video/x-raw, format=(string)BGR, width=(int)%d, height=(int)%d, framerate=(fraction)%d/1 ! "
+        "videoconvert ! omxh264enc bitrate=%d ! video/x-h264, stream-format=(string)byte-stream ! h264parse ! rtph264pay ! "
+        "udpsink host=%s port=%d",
         width, height, framerate, bitrate, ip.c_str(), port);
 
      std::string pipstring = buff;
