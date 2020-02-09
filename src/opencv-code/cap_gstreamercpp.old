@@ -494,7 +494,6 @@ bool CvCapture_GStreamer::open(int type,
   // else, we might have a file or a manual pipeline.
   // if gstreamer cannot parse the manual pipeline, we assume we were given and
   // ordinary file path.
-  printf("Test for valid URL \n");
   if (!gst_uri_is_valid(filename)) {
     uri = realpath(filename, NULL);
     //printf("filename: %s\n", filename);
@@ -627,8 +626,8 @@ bool CvCapture_GStreamer::open(int type,
     }
   }
 
-  //TODO: is 1 single buffer really high enough? - set 3 buffers (from 1) (RM)
-  gst_app_sink_set_max_buffers(GST_APP_SINK(sink), 3);
+  //TODO: is 1 single buffer really high enough?
+  gst_app_sink_set_max_buffers(GST_APP_SINK(sink), 1);
   gst_app_sink_set_drop(GST_APP_SINK(sink), stream);
 
   //do not emit signals: all calls will be synchronous and blocking

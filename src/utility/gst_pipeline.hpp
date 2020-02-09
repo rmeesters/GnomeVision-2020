@@ -72,26 +72,22 @@ extern std::string createReadPipelineSplit (int vid_device, int width, int heigh
             "image/jpeg,format=(string)YUY2,width=(int)%d,height=(int)%d,framerate=(fraction)%d/1 ! jpegdec ! "
             "videoconvert ! video/x-raw,format=BGR ! " // Change Format to BGR
             "tee name=split "
-                "split. ! queue ! videoconvert ! nvvidconv ! nvv4l2h264enc bitrate=%d ! "
+                "! queue ! videoconvert ! nvvidconv ! nvv4l2h264enc bitrate=%d ! "
                     "video/x-h264, stream-format=(string)byte-stream ! h264parse ! "
                     "rtph264pay ! udpsink host=%s port=%d "
                 "split. ! queue ! autovideoconvert ! appsink",
-            //"appsink",
             vid_device, width, height, framerate, bitrate, ip.c_str(), port);
     } 
     else {
         sprintf (buff,
             "v4l2src device=/dev/video%d ! "
-            // "video/x-raw,format=(string)YUY2,width=(int)%d,height=(int)%d,framerate=(fraction)%d/1 ! "
-	    "video/x-raw,format=YUY2,width=%d,height=%d,framerate=%d/1 ! "
+            "video/x-raw,format=YUY2,width=%d,height=%d,framerate=%d/1 ! "
             "videoconvert ! video/x-raw,format=BGR ! " // Change Format to BGR
             "tee name=split "
-                "split. ! queue ! videoconvert ! nvvidconv ! nvv4l2h264enc bitrate=%d ! "
-                    // "video/x-h264, stream-format=(string)byte-stream ! h264parse ! "
+                "! queue ! videoconvert ! nvvidconv ! nvv4l2h264enc bitrate=%d ! "
                     "video/x-h264, stream-format=byte-stream ! h264parse ! "
                     "rtph264pay ! udpsink host=%s port=%d "
                 "split. ! queue ! autovideoconvert ! appsink",
-            //"appsink",
             vid_device, width, height, framerate, bitrate, ip.c_str(), port);
     }
 
@@ -119,6 +115,7 @@ extern std::string create_write_pipeline (int width, int height, int framerate,
         "appsrc ! "
         // "video/x-raw, format=(string)YUY2, width=(int)%d, height=(int)%d, framerate=(fraction)%d/1 ! "
         "video/x-raw, format=YUY2, width=%d, height=%d, framerate=%d/1 ! "
+        "videoconvert ! video/x-raw,format=BGR ! " // Change Format to BGR
         // "videoconvert ! omxh264enc bitrate=%d ! video/x-h264, stream-format=(string)byte-stream ! h264parse ! rtph264pay ! "
         "videoconvert ! nvvidconv ! nvv4l2h264enc bitrate=%d ! video/x-h264, stream-format=byte-stream ! "
         "h264parse ! rtph264pay ! udpsink host=%s port=%d",

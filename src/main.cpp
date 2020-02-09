@@ -65,8 +65,9 @@ int main (int argc, char* argv[]) {
     if (verbose) {
         printf ("GStreamer read pipeline: %s\n", read_pipeline.c_str()); 
     }
+    printf ("Opening Camera \n"); 
     mycam.open (CV_CAP_GSTREAMER_FILE, read_pipeline.c_str());
-
+    printf ("Camera Opened \n");
     if (verbose) {
         printf ("Succesfully opened camera with dimensions: %dx%d\n",
             width, height);
